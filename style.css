@@ -1,0 +1,247 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #12161f;
+    color: white;
+}
+header{
+    position: relative;
+}
+nav {
+    background-color: #1e222d;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 1px;
+    
+}
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 12px;
+    padding: 0;
+}
+.head {
+    background-image: url('images/cherryblossom.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+    width: 100%;
+    display: flex ;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+nav ul li a { 
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 3px;
+}
+nav ul li a:hover  {
+    color: white;
+    background-color: #f3a2b5;
+}
+nav ul li a.active{
+    color: white;
+    background-color: #f3a2b5;
+    border-bottom: 4px solid white;
+    border-radius: 7px;
+}
+/*video and map styling*/ 
+.media-con{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+.media-card {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px;
+    background-color: #1e222d;
+    border-radius: 23px;
+    border-left: 10px solid #f3a2b5;
+}
+.media-card iframe{
+    width: 100%;
+    height: 450px;
+    border: none;
+    display: block;
+}
+.media-card h2 {
+    flex:1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    margin: 0 auto;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    border: 3px solid #f3a2b5;
+    border-radius: 15px;
+    background-color: #1e222d;
+    padding: 7px;
+    max-width: 360px;
+}
+.card img {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.card h2{
+    color:#f3a2b5;
+}
+.card p {
+    color: #e2e8f0;
+}
+footer {
+    background-color: #1e222d;
+    color: #a0aec0;
+    text-align: center;
+    padding: 12px;
+    font-family: Arial;
+    font-size: 1rem;
+    border-top: 1px solid #f3a2b5;
+    margin-top: auto;
+}
+#preloader {
+    width: 100%;
+    height: 100%;
+    background: white url(https://loading.io/assets/mod/spinner/midorikappa/lg.gif) no-repeat fixed center;
+    z-index: 2000;
+    position: fixed;
+}
+.intro {
+    margin: 30px auto;
+    padding: 20px;
+    text-align: left;
+    color:white;
+}
+.intro h2{
+    color:#f3a2b5;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+.intro p {
+    font-size: 1.1rem;
+}
+.why {
+    background-color: #1e222d;
+    border-left: 6px solid #f3a2b5;
+    border-radius: 12px;
+    color: white;
+    padding: 30px;
+    margin: 40px auto;
+}
+.why h2{
+    color: #f3a2b5;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.why p{
+    color:#e2e8f0;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.why ul {
+    gap: 5px;
+}
+.why li {
+    background-color: #ef8ba3;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 1px solid #12161f;
+    color: #e2e8f0;
+}
+.dos-donts {
+    margin: 50px auto;
+    padding: 20px;
+    color: white;
+}
+.dos-donts h2 {
+    color:#f3a2b5;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.dos-donts .subtitle {
+    text-align: center;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+.d-con {
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+}
+.dos, .donts {
+    flex: 1;
+    background-color: #1e222d;
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid #ef8ba3;
+}
+.dos,.donts{
+    border-top: 5px solid #ef8ba3;
+}
+.dos-donts h3{
+    color:#f3a2b5;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.d-con ul{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+.d-con li{
+    font-size: 1rem;
+    color:#e2e8f0;
+}
+.food {
+    margin: 30px;
+    padding: 18px;
+    background-color: #1e222d;
+    border-left: 5px solid #ef8ba3;
+    border-radius: 8px;
+    color:white;
+}
+.food h3{
+    color: #f3a2b5;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.food ul{
+    padding-left: 18px;
+    margin: 0;
+}
+.food li{
+    color:#e2e8f0;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+hr{
+    border-color: #1e222d;
+}
